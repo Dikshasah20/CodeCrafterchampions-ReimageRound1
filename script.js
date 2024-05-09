@@ -19,7 +19,7 @@
                     this.setTimeout(function(event){
                             document.querySelector('.spinner-wrapper').style.display='none'
                         },500)
-                },1000)
+                },10)
             
 
 
