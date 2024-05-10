@@ -37,3 +37,45 @@ html, body{
     overflow: hidden;
     z-index: -1;
   }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Place the video behind other content */
+  }
+  .vertical-text-left {
+    writing-mode: vertical-rl; /* Vertical writing mode, right-to-left */
+    text-orientation: upright; /* Keep the text upright */
+    transform: rotate(180deg); 
+    transform-origin: center; /* Set the rotation origin to the center */
+    text-orientation: mixed;  
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-left: 40px;
+  }
+  .vertical-text-right {
+    writing-mode: vertical-rl; /* Vertical writing mode, right-to-left */
+    text-orientation: upright; /* Keep the text upright */
+    transform: scaleX(1);
+    /* transform: rotate(180deg);  */
+    transform-origin: center; /* Set the rotation origin to the center */
+    text-orientation: mixed;  
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 40px;
+  }
+  .verticleText{
+    display: flex;
+    margin-top: 200px; 
+    
+    color: aliceblue;
+}
+#ruleTheWold{
+    color: aliceblue;
+    margin-top: 50px;
+    font-size: clamp(10px,11.35vw,20vh);
+    display: inline-block;
+}
