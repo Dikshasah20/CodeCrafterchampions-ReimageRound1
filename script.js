@@ -25,4 +25,3 @@
 
         })
 }//end the loader section
-
