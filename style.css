@@ -1,8 +1,9 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Centra No. 2 Medium", sans-serif;
+  color: aliceblue;
 }
 
 
@@ -83,55 +84,166 @@ svg {
   height: 100vh;
 }
 
-.video-container/*video container*/ 
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
+#navBar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 20px 30px;
+  color: aliceblue;
+
+}
+
+#navTags {
+  margin-left: 930px;
+  display: flex;
+  gap: 30px;
+
+
+
+}
+#ruleTheWorld{
+  position: absolute;
+  top:75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 13.9rem;
+  white-space: nowrap;
+  opacity: .7;
+  font-family: 'Centra No. 2 Medium', sans-serif;
+  z-index: 1
+}
+
+#subHeadings{
+  display: flex;
+  
+  position: absolute;
+  top:85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fbe8cc;
+  font-family: 'Centra No. 2 Bold', sans-serif;
+  }
+  #subHeading1{
+  position: absolute;
+  
+  transform: translate(-733%,-100%);
+  
+  }
+  
+  
+  #subHeading2{
+  position: absolute;
+  
+  transform: translate(-420%, -100%);
+  
+  }
+  #subHeading3{
+  position: absolute;
+  
+  transform: translate(165%,-100%);
+  
+  }
+  #subHeading4{
+  position: absolute;
+  
+  transform: translate(700%,-100%);
+  
   }
 
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; /* Place the video behind other content */
-  }
-  .vertical-text-left {
-    writing-mode: vertical-rl; /* Vertical writing mode, right-to-left */
-    text-orientation: upright; /* Keep the text upright */
-    transform: rotate(180deg); 
-    transform-origin: center; /* Set the rotation origin to the center */
-    text-orientation: mixed;  
-    white-space: nowrap; /* Prevent text wrapping */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin-left: 40px;
-  }
-  .vertical-text-right {
-    writing-mode: vertical-rl; /* Vertical writing mode, right-to-left */
-    text-orientation: upright; /* Keep the text upright */
-    transform: scaleX(1);
-    /* transform: rotate(180deg);  */
-    transform-origin: center; /* Set the rotation origin to the center */
-    text-orientation: mixed;  
-    white-space: nowrap; /* Prevent text wrapping */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin-right: 40px;
-  }
-  .verticleText{
-    display: flex;
-    margin-top: 200px; 
+ 
+    #scrollToExplore{
+      position: absolute;
+      top: 50%;
+      left: 49%;
+    writing-mode: vertical-rl; 
+    text-orientation: mixed; 
+    transform: rotate(0deg); 
+    color: #fbe8cc;
     
-    color: aliceblue;
-}
-#ruleTheWold{
-    color: aliceblue;
-    margin-top: 50px;
-    font-size: clamp(10px,11.35vw,20vh);
-    display: inline-block;
-}
+    }
+    #pausvideo{
+      position: absolute;
+      top: 50%;
+      right: 97%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed; 
+    transform: rotate(180deg); 
+    
+    color: #fbe8cc;
+    cursor: pointer;
+    }
+     
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+  *{
+ 
+  
+  
+  #footer{
+  position: absolute;
+  top:95%;
+  left:50% ;
+  transform: translate(-50%,-50%);
+  display: flex;
+  
+  #copyRight{
+  transform: translate(-90%,120%);
+  white-space: nowrap;
+  
+  }
+  img{
+  height: 20px;
+  width: 60px;
+  display:inline-flex;
+  gap: 10px;
+  transform: translate(-420%,120%);
+  }
+  #footerLinks{
+  a{
+  color: aliceblue;
+  text-decoration: none;
+  
+  
+  }
+  transform: translate(145%,60%)
+  }
+  
+  }
+  
+  .container-fluid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  }
+  #scrollToExplore{
+  writing-mode: vertical-rl; 
+  text-orientation: mixed; 
+  transform: rotate(0deg); 
+  color: #fbe8cc;
+  
+  }
+  #pausvideo{
+  writing-mode: vertical-rl;
+  text-orientation: mixed; 
+  transform: rotate(180deg); 
+  
+  color: #fbe8cc;
+  cursor: pointer;
+  } */

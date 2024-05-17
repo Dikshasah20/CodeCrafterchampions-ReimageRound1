@@ -24,5 +24,83 @@
 
 
         })
+<<<<<<< HEAD
 }//end the loader section
+=======
+}//end the loader section
+
+
+//add the video pause event
+const homeVideo=document.getElementById('landingPageVideo')
+console.log(homeVideo)
+const pauseButton=document.getElementById('pausvideo')
+console.log(pauseButton)
+
+pauseButton.addEventListener("click", ()=> {
+    if (homeVideo.paused) {
+        homeVideo.play(); // If the video is paused, play it
+    } else {
+        homeVideo.pause(); // If the video is playing, pause it
+    }
+});
+
+// gsap animation
+
+gsap.from("#landingPageVideo",{
+    opacity:0,
+    delay:1,
+    duration:1
+
+})
+
+gsap.from("#navBar",{
+    y:-30,
+    delay:1,
+    duration:1,
+    opacity:0
+})
+
+const tl=gsap.timeline()
+tl.from("#ruleTheWorld",{
+    y:30,
+    delay:1,
+    duration:1,
+    opacity:0
+})
+gsap.from("#subHeading1,#subHeading2",{
+    x:-30,
+    delay:1,
+    duration:1,
+    opacity:0
+
+}) 
+gsap.from("#subHeading3,#subHeading4",{
+    x:-30,
+    delay:1,
+    duration:1,
+    opacity:0
+
+}) 
+gsap.from("#footer",{
+    y:30,
+    delay:1,
+    duration:1,
+    opacity:0
+
+})
+
+gsap.from("#scrollToExplore",{
+    x:30,
+    delay:1,
+    duration:1,
+    opacity:0
     
+})
+gsap.from("#pausvideo",{
+    x:-30,
+    delay:1,
+    duration:1,
+    opacity:0
+
+})
+>>>>>>> Feature/HorizontalScrollingEffect
