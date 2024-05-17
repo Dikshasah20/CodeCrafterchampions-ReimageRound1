@@ -19,9 +19,10 @@
                     this.setTimeout(function(event){
                             document.querySelector('.spinner-wrapper').style.display='none'
                         },500)
-                },10)
+                },1000)
             
 
 
         })
 }//end the loader section
+    
