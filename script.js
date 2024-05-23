@@ -24,9 +24,6 @@
 
 
         })
-<<<<<<< HEAD
-}//end the loader section
-=======
 }//end the loader section
 
 
@@ -103,4 +100,3 @@ gsap.from("#pausvideo",{
     opacity:0
 
 })
->>>>>>> Feature/HorizontalScrollingEffect
