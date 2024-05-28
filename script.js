@@ -1,102 +1,39 @@
-{//loader Spiner <By chaitanyaSharma>
-            const spinnerOverlay=document.createElement('div')   //spinner overlay create
-            spinnerOverlay.classList.add('spinner-wrapper')     //spinner overlay class
-            document.body.insertAdjacentElement("afterbegin", spinnerOverlay) // inert overlay after the body tag
-        // _____________________________________________________________________________________________________________________________________________________________________
 
-            const spinnerBox=document.createElement('div')    //spinner Box create
-            spinnerBox.classList.add('spinner-border','text-light')       //spinner Box class
-            spinnerBox.setAttribute('role','status')         //spinner Box role attribute
-            spinnerOverlay.appendChild(spinnerBox)         // inert spinner box after the overlay tag
-
-
-            //the loder will invesible after 1 sec
-            
-        window.addEventListener('load',()=>{
-
-                setTimeout(()=>{
-                    document.querySelector('.spinner-wrapper').style.opacity='0'
-                    this.setTimeout(function(event){
-                            document.querySelector('.spinner-wrapper').style.display='none'
-                        },500)
-                },1000)
-            
-
-
-        })
-}//end the loader section
-
-
-//add the video pause event
-const homeVideo=document.getElementById('landingPageVideo')
-console.log(homeVideo)
-const pauseButton=document.getElementById('pausvideo')
-console.log(pauseButton)
-
-pauseButton.addEventListener("click", ()=> {
-    if (homeVideo.paused) {
-        homeVideo.play(); // If the video is paused, play it
+function applyScrollDirection() {
+    const container = document.querySelector('.container');
+    const pages = document.querySelectorAll('.page');
+  const numPages = pages.length;
+  document.documentElement.style.setProperty('--num-pages', numPages);
+    if (window.innerWidth >= 1200) {
+      container.style.flexDirection = 'row';
+      container.style.width = `${100 * numPages}%`;
+      container.style.width = '100%';
+      container.style.height = '100%';
+      container.style.scrollSnapType = 'none';
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".page", {
+        xPercent: -100 * (document.querySelectorAll(".page").length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".container",
+          pin: true,
+          scrub: 1,
+          end: () => "+=" + document.querySelector(".container").offsetWidth
+        }
+      });
     } else {
-        homeVideo.pause(); // If the video is playing, pause it
+        
+      container.style.flexDirection = 'column';
+      container.style.width = '100%';
+      container.style.height = `${100 * numPages}%`;
+      container.style.scrollSnapType = 'y mandatory';
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     }
-});
+  }
+  window.addEventListener('resize', applyScrollDirection);
 
-// gsap animation
-
-gsap.from("#landingPageVideo",{
-    opacity:0,
-    delay:1,
-    duration:1
-
-})
-
-gsap.from("#navBar",{
-    y:-30,
-    delay:1,
-    duration:1,
-    opacity:0
-})
-
-const tl=gsap.timeline()
-tl.from("#ruleTheWorld",{
-    y:30,
-    delay:1,
-    duration:1,
-    opacity:0
-})
-gsap.from("#subHeading1,#subHeading2",{
-    x:-30,
-    delay:1,
-    duration:1,
-    opacity:0
-
-}) 
-gsap.from("#subHeading3,#subHeading4",{
-    x:-30,
-    delay:1,
-    duration:1,
-    opacity:0
-
-}) 
-gsap.from("#footer",{
-    y:30,
-    delay:1,
-    duration:1,
-    opacity:0
-
-})
-
-gsap.from("#scrollToExplore",{
-    x:30,
-    delay:1,
-    duration:1,
-    opacity:0
-    
-})
-gsap.from("#pausvideo",{
-    x:-30,
-    delay:1,
-    duration:1,
-    opacity:0
-
-})
+applyScrollDirection();
+// gsap.from('#page1',{
+//     x:100,duration:2,delay:2
+// })
+  

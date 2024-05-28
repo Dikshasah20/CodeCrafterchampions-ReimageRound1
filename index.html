@@ -3,147 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CodeCrafterchampions-ReimageRound1</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      rel="shortcut icon"
+      href="utils/media/Screenshot from 2024-05-23 15-16-56.png"
+      type="image/x-icon"
     />
-      <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="navBar">
-      <div class="navIcons">
-        <img
-          class="border-end"
-          src="utils/media/Screenshot_from_2024-05-09_22-20-21-removebg-preview.png"
-        />
-        <label
-          style="font-size: 11px"
-          class="text-light ms-2"
-          for="lasVegasLogo"
-        >
-          Powered By
-        </label>
+    <div class="container">
+      <section id="page1" class="page">
+        <div id="navBar">
+          <div class="navIcons">
+            <img
+              class="border-end"
+              src="./utils/Screenshot_from_2024-05-09_22-20-21-removebg-preview.png"
+            />
+            <label
+              style="font-size: 11px"
+              class="text-light ms-2"
+              for="lasVegasLogo"
+            >
+              Powered By
+            </label>
 
-        <img
-          class="ms-4"
-          style="height: 28px; width: 90px"
-          src="https://rwlasvegas.expedia.com/img/logo.svg "
-          alt=""
-        />
-      </div>
-
-      <div id="navTags">
-        <a href="#" class="nav-link">HILTON</a>
-        <a href="#" class="nav-link">CROCKFORDS </a>
-        <a href="#" class="nav-link">CONRAD</a>
-        <a href="#" class="nav-link">START PLANNING</a>
-      </div>
-    </div>
-
-    <div id="outer">
-      <div id="slider">
-        <section id="sectionOne">
-          <div class="inner">
-            <video autoplay muted loop id="landingPageVideo">
-              <source
-                src="utils/media/01_Resorts_Hero_Desktop.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div id="content">
-              <h1 id="ruleTheWorld">Rule the World.</h1>
-
-              <div class="container-fluid">
-                <div id="pageNavigator " class="row">
-                  <div id="pausvideo" class="col-6">PAUSE VIDEO</div>
-                  <div id="scrollToExplore" class="col-6">
-                    SCROLL TO EXPLORE
-                  </div>
-                </div>
-              </div>
-              <div id="subHeadings">
-                <h4 id="subHeading1">JOURNEY</h4>
-                <h4 id="subHeading2">HILTON</h4>
-                <h4 id="subHeading3">CROCKFORDS</h4>
-                <h4 id="subHeading4">CONRAD</h4>
-              </div>
-
-              <footer id="footer">
-                <p id="copyRight">
-                © 2023 Expedia, Inc., an expedia group company. All Rights Reserved
-                </p>
-                <span class="socialMediaIcons">
-                <img
-                id="faceBook"
-                src="https://rwlasvegas.expedia.com/img/facebook.svg
-                "
-                alt=""
-                />
-                <img
-                id="tikTok"
-                src="https://rwlasvegas.expedia.com/img/tiktok.svg
-                "
-                alt=""
-                />
-                <img
-                id="instaGram"
-                src="https://rwlasvegas.expedia.com/img/instagram.svg
-                "
-                alt=""
-                />
-                </span>
-                <div id="footerLinks">
-                <a class="footerUtilLinks" href="#">Privacy Policy</a>
-                <a class="footerUtilLinks" href="#">Terms of Use</a>
-                <a class="footerUtilLinks" href="#">Do not sell my personal information</a>
-                </div>
-                </footer>
-            </div>
+            <img
+              class="ms-4"
+              style="height: 28px; width: 90px"
+              src="https://rwlasvegas.expedia.com/img/logo.svg "
+              alt=""
+            />
           </div>
-        </section>
-        <!-- end first section -->
-        <div class="page3 w-full h-screen ">
-          <img src="https://images.prismic.io/expedia/44b63dde-78d1-44a5-b971-5970a18887b9_Entrance_Resorts_World_Las_Vegas.jpeg?auto=compress,format&w=2200&fm=webp&q=80" alt="">
+
+          <div id="navTags">
+            <a href="#" class="nav-link">HILTON</a>
+            <a href="#" class="nav-link">CROCKFORDS </a>
+            <a href="#" class="nav-link">CONRAD</a>
+            <a href="#" class="nav-link">START PLANNING</a>
+          </div>
         </div>
-    
 
-        
-      </div>
-      
+        <video autoplay muted loop id="video-background">
+          <source
+            id="ResortvideoSource"
+            src="./utils/media/01_Resorts_Hero_Desktop.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div id="content">
+          <h1 id="ruleTheWorld">Rule the World.</h1>
+        </div>
+        <div class="pausVideoSrollPageDiv">
+          <div id="pausvideo">PAUSE VIDEO</div>
+          <div id="scrollToExplore">SCROLL TO EXPLORE</div>
+        </div>
+        <div id="subHeadings">
+          <h4 id="subHeading1">JOURNEY</h4>
+          <h4 id="subHeading2">HILTON</h4>
+          <h4 id="subHeading3">CROCKFORDS</h4>
+          <h4 id="subHeading4">CONRAD</h4>
+        </div>
+      </section>
+      <section id="page2" class="page">Page2</section>
+      <section id="page3" class="page">
+        <img src="https://images.prismic.io/expedia/44b63dde-78d1-44a5-b971-5970a18887b9_Entrance_Resorts_World_Las_Vegas.jpeg?auto=compress,format&w=2200&fm=webp&q=80" alt="">
+
+      </section>
+      <section id="page4" class="page">Page 4</section>
+      <section id="page5" class="page">Page 5</section>
+      <section id="page6" class="page">Page 6</section>
+      <section id="page7" class="page">Page 7</section>
+      <section id="page8" class="page">Page 8</section>
     </div>
-   
-
-    <!-- gsap js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- custom js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
-
-  
-  <footer class="flex"id="footer">
-  <p id="copyRight"> © 2023 Expedia, Inc., an expedia group company. All Rights Reserved</p>
-  <span class="">
-  <img id="faceBook" src="https://rwlasvegas.expedia.com/img/facebook.svg "alt=""/>
-  <img id="tikTok" src="https://rwlasvegas.expedia.com/img/tiktok.svg" alt=""/>
-  <img id="instaGram" src="https://rwlasvegas.expedia.com/img/instagram.svg" alt=""/>
-  </span>
-  <div id="footerLinks">
-  <a class="footerUtilLinks" href="#">Privacy Policy</a>
-  <a class="footerUtilLinks" href="#">Terms of Use</a>
-  <a class="footerUtilLinks" href="#">Do not sell my personal information</a>
-  </div>
-  </footer>
-  
-  
-  </div>
